@@ -1,3 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  background-color: #C3D9AC;
+  color: #fff;
+  padding: 0;
+  margin:0;
+  height: 3rem;
+  width: 100%;
+  z-index: 999;
+}
+
+header .logo {
+    display: flex;
+    flex: 1;
+}
+
+header nav {
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    margin: 0 1rem;
+    padding: 0;  
+
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    top: 3rem; 
+    background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid ##75946E;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    border-bottom: 0.25rem solid #75946E;
+}
+
+.hero-text {
+    background-color: #C3D9AC;
+    border-radius: 0.25rem;
+    margin-left: 5rem;
+    padding: 1.5rem;
+    width: 25.625rem;
+    text-align: center;
+}
+
+.hero-text p {
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+}
+
+.hero-text .btn {
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    background-color: #75946E;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.hero-text .btn a:hover {
+    text-decoration: none;
+    background-color: #C3D9AC;
+    color: #fff;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+    height: 15rem;
+    border-bottom: 0.25rem solid #75946E;
+}
+
+.about-text {
+    flex: 1;
+    background-color: #FFC0CB;
+    padding: 2rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+.about-image {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    object-fit: cover;
+    height: auto;
+    height: 100%;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.pricing-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 2rem auto;
+    width: 100%;
+    border: 1px solid #75946E;
+}
+
+.pricing-box-text {
+    background-color: #FFC0CB;
+    padding: 2rem;
+}
+
+.pricing-box-image img {
+    max-width: 100%;
+    height: auto;    
+}
+
+
+footer {
+    background-color: #C3D9AC;
+}
